@@ -2,7 +2,7 @@
 <html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Vibe Shop{% endblock %}</title>
+    <title>{% block title %}Chill Vibes{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         :root {
@@ -81,7 +81,7 @@
 </head>
 <body>
     <div class="topbar">
-        <span>Welcome to VibeShop 🛒</span>
+        <span>Chill Vibes 🛒</span>
         <form method="post" action="{% url 'store:toggle_theme' %}" style="display:inline;">
             {% csrf_token %}
             <button type="submit" class="theme-toggle">Toggle Theme</button>
@@ -102,7 +102,7 @@
     </div>
 
     <div class="footer">
-        <p>&copy; 2025 VibeShop. All rights reserved.</p>
+        <p>&copy; 2025 ChillVibes. All rights reserved.</p>
     </div>
 </body>
 </html>
