@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome to VibeShop{% endblock %}
+
+{% block content %}
+    <h1>Welcome to VibeShop 🛍️</h1>
+    <p>Your one-stop shop for cool stuff, coming soon!</p>
+
+    <div style="margin-top: 2rem;">
+        <p>Start exploring our products or log in to manage your account.</p>
+        <ul>
+            <li><a href="{% url 'products:product_list' %}">Browse Products</a></li>
+            <li><a href="{% url 'user:login' %}">Login / Register</a></li>
+        </ul>
+    </div>
+{% endblock %}
